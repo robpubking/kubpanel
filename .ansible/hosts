@@ -1,0 +1,12 @@
+[awsclient]
+aws-node  ansible_port=51208 remote_user=devops
+
+[gcpclient]
+gcp-node  ansible_port=51208 remote_user=devops
+
+[cloud:children]
+awsclient
+gcpclient 
+
+
+
