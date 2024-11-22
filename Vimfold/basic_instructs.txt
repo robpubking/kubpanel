@@ -1,11 +1,3 @@
-Line one
-Line two
-Line two
-Line three
-Line four
-Line three
-Line four
-Line five
 
 /*** 
 
@@ -22,7 +14,7 @@ b move to the head of the previous word
 e move to the end of the next word
 ge oppsite to 'e', move to the end of the previous word 
 
-f find the special character in the same line 
+f find the specified character in the same line 
 
 ^ move to the head of the current line
 $ move to the end of the current line 
@@ -34,6 +26,7 @@ gg move to the specified line of the line number
 . repeat the last modification
 dd delete the current line 
 yy copy the current line 
+p paste the contents copied by "yy" instruct 
 x delete the current character
 
 ## Most of the instructs can preceded by numbers, 
