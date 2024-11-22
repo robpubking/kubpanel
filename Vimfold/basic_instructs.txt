@@ -1,6 +1,4 @@
 
-/*** 
-
 In the ex mode:
 
 
@@ -34,9 +32,5 @@ which will effects on number lines,
 such as "5dd" will delete the next 5 lines, "4h" will move to right by 4 characters 
 
 ## 
-
-
-
-
 
 
