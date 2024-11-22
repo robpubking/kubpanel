@@ -1,0 +1,49 @@
+Line one
+Line two
+Line two
+Line three
+Line four
+Line three
+Line four
+Line five
+
+/*** 
+
+In the ex mode:
+
+
+j move down
+k move up 
+l move right
+h move left 
+
+w move to the head of the next word 
+b move to the head of the previous word
+e move to the end of the next word
+ge oppsite to 'e', move to the end of the previous word 
+
+f find the special character in the same line 
+
+^ move to the head of the current line
+$ move to the end of the current line 
+G move to the last line
+gg move to the specified line of the line number
+
+
+>G add indentation from next line to last line 
+. repeat the last modification
+dd delete the current line 
+yy copy the current line 
+x delete the current character
+
+## Most of the instructs can preceded by numbers, 
+which will effects on number lines, 
+such as "5dd" will delete the next 5 lines, "4h" will move to right by 4 characters 
+
+## 
+
+
+
+
+
+
