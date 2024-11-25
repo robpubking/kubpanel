@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+  <artifactId>aws-java-sdk-ec2</artifactId>
+  <version>1.12.772-474.v7f79a_2046a_fb_</version>
+  <packaging>hpi</packaging>
+  <name>Amazon Web Services SDK :: EC2</name>
+  <description>This plugin provides AWS SDK for Java for other plugins.</description>
+  <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>vlatombe</id>
+      <name>Vincent Latombe</name>
+      <email>vincent@latombe.net</email>
+    </developer>
+  </developers>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
+    <connection>scm:git:https://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/aws-java-sdk-plugin.git</developerConnection>
+    <tag>7f79a2046afbed524863b705f50e4251e691d86e</tag>
+    <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-minimal</artifactId>
+      <version>1.12.772-474.v7f79a_2046a_fb_</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk-ec2</artifactId>
+      <version>1.12.772</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>jmespath-java</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <version>3.57</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

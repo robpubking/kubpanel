@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Docker plugin
+Specification-Version: 1.7
+Implementation-Title: Docker plugin
+Implementation-Version: 1.7.0
+Group-Id: io.jenkins.docker
+Artifact-Id: docker-plugin
+Short-Name: docker-plugin
+Long-Name: Docker plugin
+Url: https://github.com/jenkinsci/docker-plugin
+Plugin-Version: 1.7.0
+Hudson-Version: 2.452.4
+Jenkins-Version: 2.452.4
+Plugin-Dependencies: ionicons-api:74.v93d5eb_813d5f,instance-identity:18
+ 5.v303dc7c645f9,workflow-api:1336.vee415d95c521;resolution:=optional,wo
+ rkflow-step-api:678.v3ee58b_469476;resolution:=optional,workflow-suppor
+ t:926.v9f4f9b_b_98c19;resolution:=optional,bouncycastle-api:2.30.1.78.1
+ -248.ve27176eb_46cb_,cloud-stats:336.v788e4055508b_,docker-commons:443.
+ v921729d5611d,docker-java-api:3.4.0-94.v65ced49b_a_7d5,durable-task:577
+ .v2a_8a_4b_7c0247,ssh-slaves:2.973.v0fa_8c0dea_f9f,token-macro:400.v354
+ 20b_922dcb_,pipeline-model-extensions:2.2214.vb_b_34b_2ea_9b_83;resolut
+ ion:=optional
+Plugin-Developers: Nigel Magnay:magnayn:,Nicolas De Loof:ndeloof:,Peter 
+ Darton:pjdarton:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/docker-plugin
+ .git
+Plugin-ScmTag: docker-plugin-1.7.0
+Plugin-ScmUrl: https://github.com/jenkinsci/docker-plugin
+Plugin-GitHash: 7feea72ee6be641ab544565fd26eda85ddca87bd
+Implementation-Build: 7feea72ee6be641ab544565fd26eda85ddca87bd
+
