@@ -1,0 +1,15 @@
+---
+- name: install prometheus-node-exporter
+  hosts: cloud
+  become: yes
+  vars_files: 
+  - /home/devops/.ansible/become_passwd.yaml 
+  tasks:
+  - name: prometheus-node-exporter
+    ansible.builtin.apt:
+      name: prometheus-node-exporter
+      state: latest
+      update_cache: yes
+
+
+

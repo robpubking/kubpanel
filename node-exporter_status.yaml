@@ -1,0 +1,17 @@
+---
+- name: to check the status of the prometheus-node-exporter service
+  hosts: cloud
+  become: yes
+  vars_files: 
+  - /home/devops/.ansible/become_passwd.yaml 
+  tasks:
+  - name: to check the status of the prometheus-node-exporter service
+    ansible.builtin.systemd:
+      name: prometheus-node-exporter.service
+      state: started
+      enabled: yes
+
+      
+
+
+
