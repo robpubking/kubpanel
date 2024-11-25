@@ -2,6 +2,7 @@
 <hudson>
   <disabledAdministrativeMonitors>
     <string>jenkins.diagnostics.ControllerExecutorsNoAgents</string>
+    <string>jenkins.diagnostics.ControllerExecutorsAgents</string>
   </disabledAdministrativeMonitors>
   <version>2.479.1</version>
   <numExecutors>2</numExecutors>
@@ -34,7 +35,7 @@
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>-1</slaveAgentPort>
-  <label></label>
+  <label>controller</label>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
   </crumbIssuer>

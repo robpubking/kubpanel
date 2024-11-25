@@ -1,0 +1,22 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>gcp-client</name>
+  <description>It is the google cloud client</description>
+  <remoteFS>/home/devops/jenkins_agent/</remoteFS>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@2.973.v0fa_8c0dea_f9f">
+    <host>35.224.246.21</host>
+    <port>51208</port>
+    <credentialsId>d97270c8-8a7d-4136-97fc-8cb1776d08be</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+    <workDir>/home/devops/jenkins_agent/temp/</workDir>
+  </launcher>
+  <label>gcp</label>
+  <nodeProperties/>
+</slave>

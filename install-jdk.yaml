@@ -1,0 +1,16 @@
+---
+- name: install jdk
+  hosts: cloud
+  become: yes
+  vars_files: 
+  - /home/devops/.ansible/become_passwd.yaml 
+  tasks:
+  - name: install jdk
+    ansible.builtin.apt:
+      name: openjdk-21-jdk
+      state: present 
+      autoclean: yes
+      autoremove: yes
+      update_cache: yes 
+       
+

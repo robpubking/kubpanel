@@ -1,0 +1,24 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-11-25 16:36:24.489 UTC</timestamp>
+  <md5sum>ee1d83241cda0258b3c9473b89eabfa4</md5sum>
+  <fileName>Credential id=d97270c8-8a7d-4136-97fc-8cb1776d08be name=devops</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1389.vd7a_b_f5fa_50a_2">
+      <timestamp>1732552584487</timestamp>
+      <nodeName>nerd-client</nodeName>
+      <timestamp0>1732552584487</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1389.vd7a_b_f5fa_50a_2">
+      <timestamp>1732552834987</timestamp>
+      <nodeName>aws-client</nodeName>
+      <timestamp0>1732552834987</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1389.vd7a_b_f5fa_50a_2">
+      <timestamp>1732553079265</timestamp>
+      <nodeName>gcp-client</nodeName>
+      <timestamp0>1732553079265</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

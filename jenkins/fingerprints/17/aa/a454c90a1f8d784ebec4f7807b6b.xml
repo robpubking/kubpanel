@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-11-25 16:10:17.327 UTC</timestamp>
+  <md5sum>17aaa454c90a1f8d784ebec4f7807b6b</md5sum>
+  <fileName>Credential id=965bf0c0-c4be-4f5a-b51a-7e38d5542fa6 name=devops</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1389.vd7a_b_f5fa_50a_2">
+      <timestamp>1732551528936</timestamp>
+      <nodeName>nerd-client</nodeName>
+      <timestamp0>1732551489613</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>
