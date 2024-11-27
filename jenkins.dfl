@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+
+
+FROM alpine:3.20.3
+
+RUN apk update && apk upgrade \ 
+    && apk add --no-cache openjdk21-jre \ 
+		&& apk add --no-cache ttf-dejavu \ 
+		&& apk add bash 
+RUN mkdir -p /opt/local/jenkins \ 
+    && mkdir /home/jenkins 
+COPY ./jenkins.war /opt/local/jenkins/
+WORKDIR /opt/local/jenkins
+ENV JENKINS_HOME=/home/jenkins
+
+EXPOSE 8080
+CMD ["java", "-jar", "jenkins.war"] 
+
+
