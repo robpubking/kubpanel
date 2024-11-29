@@ -1,0 +1,26 @@
+# syntax=docker/dockerfile:1
+
+FROM alpine:3.20.3
+
+WORKDIR /opt/local/jenkins
+RUN apk update \  
+    && apk add --no-cache openjdk21-jre \ 
+		&& apk add --no-cache ttf-dejavu \ 
+		&& apk add bash 
+
+RUN mkdir /home/jenkins 
+
+RUN addgroup -S jenkins \ 
+    && adduser -S -D -s /sbin/nologin \ 
+    -h /home/jenkins jenkins -G jenkins \ 
+    && chown jenkins:jenkins /opt/local/jenkins \ 
+    && chmod g+s /opt/local/jenkins 
+#    && chown jenkins:jenkins /opt/local/jenkins/jenkins.war 
+COPY ./jenkins.war /opt/local/jenkins/
+
+USER jenkins
+ENV JENKINS_HOME=/home/jenkins
+
+EXPOSE 8080
+CMD ["java", "-jar", "jenkins.war"] 
+
